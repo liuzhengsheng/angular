@@ -1,0 +1,16 @@
+<app-applicationpannel [appid]="appId" [ctrl_1]="ctrl_1"></app-applicationpannel>
+<div [ngSwitch]="country">
+    <div *ngSwitchCase=70>
+       <app-demographics-pl></app-demographics-pl>
+    </div>
+    <div *ngSwitchCase=44>
+        <app-demographic-ru></app-demographic-ru>
+    </div>
+    <div *ngSwitchDefault>
+      <app-demographics-pl></app-demographics-pl>
+      <app-demographic-ru></app-demographic-ru>
+    </div>
+</div>
+<div  style="width: 100%;text-align: center;bottom: 0px;">
+  <app-button></app-button>
+</div>
