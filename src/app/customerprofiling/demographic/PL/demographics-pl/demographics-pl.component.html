@@ -1,20 +1,20 @@
 
-<form class="form-horizontal" style="margin-top: 30px;text-align: left">
+<form [formGroup]="myForm" class="form-horizontal" style="margin-top: 30px;text-align: left" >
   <h4 style="font-weight: bold">Dempgraphis PL</h4>
   <div class="form-group">
-    <label for="prefix" class="col-md-2">Prefix</label>
+    <label for="prefix" class="col-md-2">Prefix<app-start></app-start></label>
     <div class="col-md-2">
-      <input type="text" class="form-control" id="prefix">
+      <input type="text" class="form-control" id="prefix" formControlName='prefix'>
     </div>
-    <label for="sex" class="col-md-2">Sex</label>
+    <label for="sex" class="col-md-2">Sex<app-start></app-start></label>
     <div class="col-md-2">
-      <input type="text" class="form-control" id="sex" >
+      <input type="text" class="form-control" id="sex"formControlName='sex' >
     </div>
   </div>
   <div class="form-group">
     <label for="lastName" class="col-md-2">Last Name</label>
     <div class="col-md-2">
-      <input type="text" class="form-control" id="lastName" >
+      <input type="text" class="form-control" id="lastName">
     </div>
     <label for="firstName" class="col-md-2">First Name</label>
     <div class="col-md-2">
@@ -24,7 +24,7 @@
   <div class="form-group">
     <label for="perResidentCountry" class="col-md-2">Permanent Resident Country</label>
     <div class="col-md-2">
-      <select type="text" class="form-control" id="perResidentCountry" >
+      <select type="text" class="form-control" id="perResidentCountry">
         <option value=""></option>
         <option value="PL">Poland</option>
         <option value="RU">Russia</option>
@@ -38,7 +38,7 @@
   <div class="form-group">
     <label for="perResidence" class="col-md-2">Permanent Residence</label>
     <div class="col-md-2">
-      <input type="text" class="form-control" id="perResidence" >
+      <input type="text" class="form-control" id="perResidence">
     </div>
     <label for="email" class="col-md-2">Email</label>
     <div class="col-md-2">

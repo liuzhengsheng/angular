@@ -15,11 +15,11 @@ export class WorkqComponent implements OnInit {
     console.log(event);
     CIConstants.APP_ID = event.srcElement.innerHTML.substr(0,9);
     switch (event.srcElement.innerHTML.substr(12,14)){
-      case "PL": CIConstants.B_CTRL_1 = 70;break;
-      case "RU": CIConstants.B_CTRL_1 = 44;break;
-      default : CIConstants.B_CTRL_1 =0;break;
+      case "PL": CIConstants.B_CTRL_1 = 70; CIConstants.SCREEN_MODE='QQ';break;
+      case "RU": CIConstants.B_CTRL_1 = 44; CIConstants.SCREEN_MODE='WW';break;
+      default : CIConstants.B_CTRL_1 =0; CIConstants.SCREEN_MODE='EE';;break;
     }
-    CIConstants.SCREEN_MODE = 'default';
+    //CIConstants.SCREEN_MODE = 'default';
     this.router.navigate(['customerprofiling',{appId:CIConstants.APP_ID,ctrl_1:CIConstants.B_CTRL_1}]);
   }
 }

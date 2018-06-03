@@ -1,5 +1,4 @@
 import {Component, Input, Output} from '@angular/core';
-import {EclipseLiteUserProfile} from './Common/EclipseLiteUserProfile';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import {EclipseLiteUserProfile} from './Common/EclipseLiteUserProfile';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  UserProfile: EclipseLiteUserProfile;
+
 }
